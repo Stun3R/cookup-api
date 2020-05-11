@@ -1,0 +1,78 @@
+{
+  "name": "cookup-api",
+  "private": true,
+  "version": "0.0.0",
+  "description": "API for Cook'Up mobile app that manage your stock and recipe  ",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "commit": "git-cz"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "3.2.0",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "npm-run-all": "^4.1.5",
+    "standard-version": "^8.0.0"
+  },
+  "dependencies": {
+    "knex": "<0.20.0",
+    "pg": "^8.1.0",
+    "sqlite3": "latest",
+    "strapi": "3.0.0-beta.20.3",
+    "strapi-admin": "3.0.0-beta.20.3",
+    "strapi-connector-bookshelf": "3.0.0-beta.20.3",
+    "strapi-plugin-content-manager": "3.0.0-beta.20.3",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.20.3",
+    "strapi-plugin-email": "3.0.0-beta.20.3",
+    "strapi-plugin-upload": "3.0.0-beta.20.3",
+    "strapi-plugin-users-permissions": "3.0.0-beta.20.3",
+    "strapi-utils": "3.0.0-beta.20.3"
+  },
+  "lint-staged": {
+    "api/**/*.{js}": [
+      "eslint --quiet"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "author": {
+    "name": "CookUp"
+  },
+  "maintainers": [
+    {
+      "name": "Diane GUILLOT",
+      "email": "diane.guillot@epitech.eu"
+    },
+    {
+      "name": "Karim EL-ASLI",
+      "email": "karim.el-asli@epitech.eu"
+    },
+    {
+      "name": "Thibaut DAVID",
+      "email": "thibautdavid@icloud.com"
+    }
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
