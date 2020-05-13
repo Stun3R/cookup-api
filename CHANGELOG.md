@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/Cook-Up/cookup-api/compare/v0.1.0...v0.1.1) (2020-05-13)
+
+
+### Bug Fixes
+
+* **env:** remove .env ([015ba5d](https://github.com/Cook-Up/cookup-api/commit/015ba5d67d0740e0bdc14e8a0b477a6cb6663516))
+
 ## 0.1.0 (2020-05-13)
 
 
