@@ -12,7 +12,17 @@
         "password": "${process.env.DATABASE_PASSWORD}",
         "ssl": { "rejectUnauthorized": false }
       },
-      "options": {}
+      "options": {
+        "debug": false,
+        "acquireConnectionTimeout": 100000,
+        "pool": {
+          "min": 0,
+          "max": 10,
+          "createTimeoutMillis": 30000,
+          "acquireTimeoutMillis": 600000,
+          "idleTimeoutMillis": 30000
+        }
+      }
     }
   }
 }
