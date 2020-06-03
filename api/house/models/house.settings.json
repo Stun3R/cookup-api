@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "houses",
+  "info": {
+    "name": "House"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "houses"
+    },
+    "plannings": {
+      "collection": "planning",
+      "via": "house"
+    },
+    "foods": {
+      "collection": "food",
+      "via": "house"
+    },
+    "recipes": {
+      "collection": "recipe",
+      "via": "house"
+    },
+    "list_at": {
+      "type": "integer",
+      "default": 1,
+      "required": true,
+      "max": 7,
+      "min": 1
+    },
+    "uuid": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

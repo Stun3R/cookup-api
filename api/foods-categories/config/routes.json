@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/foods-categories",
+      "handler": "foods-categories.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/foods-categories/count",
+      "handler": "foods-categories.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/foods-categories/:id",
+      "handler": "foods-categories.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/foods-categories",
+      "handler": "foods-categories.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/foods-categories/:id",
+      "handler": "foods-categories.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/foods-categories/:id",
+      "handler": "foods-categories.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

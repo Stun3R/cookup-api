@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foodsCategories",
+  "info": {
+    "name": "Food Category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}
