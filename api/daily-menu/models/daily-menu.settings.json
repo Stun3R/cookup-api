@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dailyMenu",
+  "info": {
+    "name": "DailyMenu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "day": {
+      "type": "integer",
+      "default": 1,
+      "unique": false,
+      "max": 7,
+      "min": 1
+    },
+    "planning": {
+      "model": "planning",
+      "via": "daily_menus"
+    },
+    "breakfast": {
+      "model": "meal",
+      "via": "daily_menu"
+    },
+    "lunch": {
+      "model": "meal",
+      "via": "daily_menu"
+    },
+    "dinner": {
+      "model": "meal",
+      "via": "daily_menu"
+    }
+  }
+}

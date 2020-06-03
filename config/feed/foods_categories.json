@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Autres",
+    "icon": "other.svg"
+  },
+  {
+    "name": "Bio",
+    "icon": "bio.svg"
+  },
+  {
+    "name": "Viandes & Poissons",
+    "icon": "meat.svg"
+  },
+  {
+    "name": "Fruits & Légumes",
+    "icon": "vegetables.svg"
+  },
+  {
+    "name": "Pains & Pâtisseries",
+    "icon": "bread.svg"
+  },
+  {
+    "name": "Frais",
+    "icon": "fresh.svg"
+  },
+  {
+    "name": "Surgelés",
+    "icon": "frozen.svg"
+  },
+  {
+    "name": "Épicerie salée",
+    "icon": "pasta.svg"
+  },
+  {
+    "name": "Épicerie sucrée",
+    "icon": "snack.svg"
+  },
+  {
+    "name": "Boissons",
+    "icon": "drink.svg"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plannings",
+  "info": {
+    "name": "Planning"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "start_at": {
+      "type": "datetime",
+      "required": true
+    },
+    "end_at": {
+      "type": "datetime",
+      "required": true
+    },
+    "house": {
+      "via": "plannings",
+      "model": "house"
+    },
+    "daily_menus": {
+      "via": "planning",
+      "collection": "daily-menu"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+Project CookUp {
+    database_type: 'PostgreSQL'
+}
+
+Table DailyMenu {
+  id int [pk, increment] // auto-increment
+  day int [not null]
+  breakfast int [ref: - Meal.id]
+  lunch int [ref: - Meal.id]
+  dinner int [ref: - Meal.id]
+  planning_id int [ref: > Planning.id]
+  note: "table 'DailyMenu' contains breakfast, lunch, dinner informations for a given day"
+}
+
+Table Food_Category {
+  id int [pk, increment] // auto-increment
+  name varchar(100)
+  icon varchar(100)
+  food_id int [ref: - Food.id]
+  note: "table 'Food_Category' is used in order to add some categories to foods"
+}
+
+Table Food {
+  id int [pk, increment] // auto-increment
+  name varchar(255) [not null]
+  measure_id int [ref: - Measure.id]
+  house_id int [ref: > House.id]
+  meals_id int [ref: > Meal.id]
+  note: "table 'Food' contains the foods informations like expiration date, nutritionnal value"
+}
+
+Table House {
+  id int [pk, increment] // auto-increment
+  name varchar(100) [not null]
+  list_at datetime [not null]
+  note: "table 'House' represents an house for multiple users"
+}
+
+Table Meal {
+  id int [pk, increment] // auto-increment
+  note: "table 'Meal' allow the capacity to have multiple foods & recipes for a meal"
+}
+
+Table Measure {
+  id int [pk, increment] // auto-increment
+  name varchar(100) [not null]
+  short varchar(100) [not null]
+  use_aliments_name boolean [default: false]
+  note: "table 'Measure' is used in order to add quantity/volume informations for recipes & foods"
+}
+
+Table Planning {
+  id int [pk, increment] // auto-increment
+  start_at datetime [not null]
+  end_at datetime [not null]
+  house_id int [ref: > House.id]
+  note: "table 'Planning' contains 1 week of DailyMenu"
+}
+
+Table Recipe_Category {
+  id int [pk, increment] // auto-increment
+  name varchar(100)
+  icon varchar(100)
+  recipe_id int [ref: - Recipe.id]
+  note: "table 'Recipe_Category' is used in order to add some categories to recipes"
+}
+
+Table Recipe {
+  id int [pk, increment] // auto-increment
+  name varchar(255) [not null]
+  steps json
+  preparation time [not null]
+  cooking time [not null]
+  house_id int [ref: > House.id]
+  meals_id int [ref: > Meal.id]
+  user_id int [ref: > User.id]
+  note: "table 'Recipe' represents a recipe created by a user"
+}
+
+// Creating tables
+Table User {
+  id int [pk, increment] // auto-increment
+  username varchar(255) [not null]
+  email varchar(255) [not null, unique]
+  note: "table 'User' contains users informations"
+}
+
+
+// Relation Many-To-Many between House and Users
+Table Houses_Users {
+  house_id int [ref: > House.id]
+  user_id int [ref: > User.id]
+  note: "table 'House_Users' is a relational Table for Many-To-Many relationship"
+}
+
+Table Recipes_Foods {
+  recipe_id int [ref: > Recipe.id]
+  food_id int [ref: > Food.id]
+  note: "table 'Recipes_Foods' is a relational Table for Many-To-Many relationship"
+}
+

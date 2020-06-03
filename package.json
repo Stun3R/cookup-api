@@ -2,7 +2,7 @@
   "name": "cookup-api",
   "private": true,
   "version": "0.1.1",
-  "description": "API for Cook'Up mobile app that manage your stock and recipe  ",
+  "description": "API for Cook'Up mobile app that manage your stock and recipe",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -25,21 +25,21 @@
     "standard-version": "^8.0.0"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "find-config": "^1.0.0",
     "knex": "^0.21.1",
     "pg": "^8.0.3",
     "sqlite3": "latest",
-    "strapi": "3.0.0-beta.20.3",
-    "strapi-admin": "3.0.0-beta.20.3",
-    "strapi-connector-bookshelf": "3.0.0-beta.20.3",
-    "strapi-plugin-content-manager": "3.0.0-beta.20.3",
-    "strapi-plugin-content-type-builder": "3.0.0-beta.20.3",
-    "strapi-plugin-email": "3.0.0-beta.20.3",
-    "strapi-plugin-upload": "3.0.0-beta.20.3",
-    "strapi-plugin-users-permissions": "3.0.0-beta.20.3",
+    "strapi": "3.0.0",
+    "strapi-admin": "3.0.0",
+    "strapi-connector-bookshelf": "3.0.0",
+    "strapi-plugin-content-manager": "3.0.0",
+    "strapi-plugin-content-type-builder": "3.0.0",
+    "strapi-plugin-email": "3.0.0",
+    "strapi-plugin-graphql": "3.0.0",
+    "strapi-plugin-upload": "3.0.0",
+    "strapi-plugin-users-permissions": "3.0.0",
     "strapi-provider-email-nodemailer": "^2.0.0",
-    "strapi-utils": "3.0.0-beta.20.3"
+    "strapi-utils": "3.0.0",
+    "uuid": "^8.1.0"
   },
   "lint-staged": {
     "api/**/*.{js}": [

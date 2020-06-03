@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foods",
+  "info": {
+    "name": "Food"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "house": {
+      "via": "foods",
+      "model": "house"
+    },
+    "measure": {
+      "model": "measure"
+    }
+  }
+}

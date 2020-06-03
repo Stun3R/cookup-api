@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/daily-menus",
+      "handler": "daily-menu.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/daily-menus/count",
+      "handler": "daily-menu.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/daily-menus/:id",
+      "handler": "daily-menu.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/daily-menus",
+      "handler": "daily-menu.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/daily-menus/:id",
+      "handler": "daily-menu.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/daily-menus/:id",
+      "handler": "daily-menu.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

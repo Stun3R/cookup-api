@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "name": "Recipe"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "steps": {
+      "type": "json"
+    },
+    "preparation": {
+      "type": "time",
+      "required": true
+    },
+    "cooking": {
+      "type": "time",
+      "required": true
+    },
+    "user": {
+      "via": "recipes",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "house": {
+      "via": "recipes",
+      "model": "house"
+    },
+    "foods": {
+      "collection": "food"
+    },
+    "recipe_category": {
+      "model": "recipe-category"
+    }
+  }
+}
