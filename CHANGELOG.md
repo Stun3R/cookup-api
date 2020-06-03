@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/Cook-Up/cookup-api/compare/v0.1.1...v0.2.0) (2020-06-03)
+
+
+### Features
+
+* upgrade strapi & content type & more ([0588199](https://github.com/Cook-Up/cookup-api/commit/0588199a803d8b55647272c45f6e5a07ad005c06))
+
+
+### Bug Fixes
+
+* **pg:** Hotfix database connexion ([3ece60d](https://github.com/Cook-Up/cookup-api/commit/3ece60dd31bd819a5a33c904a4ee4ee5c25a83c9))
+* **postgresql:** hotfix postgres connection ([af04f54](https://github.com/Cook-Up/cookup-api/commit/af04f54650a44310f8cd3c7ae0ee78d515ab1234))
+* **yarn:** Outdated lockfile ([9ae4de1](https://github.com/Cook-Up/cookup-api/commit/9ae4de142be2f204571270c8f1add240799c5214))
+
 ### [0.1.1](https://github.com/Cook-Up/cookup-api/compare/v0.1.0...v0.1.1) (2020-05-13)
 
 
