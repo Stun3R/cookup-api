@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/Cook-Up/cookup-api/compare/v0.3.0...v0.3.1) (2020-06-07)
+
+
+### Features
+
+* **api:foods:** create foods management & scan ([4c29c54](https://github.com/Cook-Up/cookup-api/commit/4c29c547636c60e34746465b61cda9777de83bcf))
+
+
+### Others
+
+* **release:** 0.3.0 ([98654cb](https://github.com/Cook-Up/cookup-api/commit/98654cb47ee08bfed58ea5c31d3e91b82b05a22f))
+
 ## [0.2.0](https://github.com/Cook-Up/cookup-api/compare/v0.1.1...v0.2.0) (2020-06-03)
 
 ### Features
