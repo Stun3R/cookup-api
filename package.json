@@ -25,6 +25,7 @@
     "standard-version": "^8.0.0"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "knex": "^0.21.1",
     "pg": "^8.0.3",
     "sqlite3": "latest",

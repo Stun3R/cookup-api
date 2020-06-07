@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "GET",
+      "path": "/foods/:barcode/scan",
+      "handler": "food.scan",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }
