@@ -1,7 +1,7 @@
 {
   "name": "cookup-api",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "API for Cook'Up mobile app that manage your stock and recipe",
   "scripts": {
     "develop": "strapi develop",
