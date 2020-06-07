@@ -4,15 +4,25 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.3.1](https://github.com/Cook-Up/cookup-api/compare/v0.3.0...v0.3.1) (2020-06-07)
 
+### Features
+
+- **api:foods:** create foods management & scan ([4c29c54](https://github.com/Cook-Up/cookup-api/commit/4c29c547636c60e34746465b61cda9777de83bcf))
+
+## [0.3.0](https://github.com/Cook-Up/cookup-api/compare/v0.1.1...v0.3.0) (2020-06-07)
 
 ### Features
 
-* **api:foods:** create foods management & scan ([4c29c54](https://github.com/Cook-Up/cookup-api/commit/4c29c547636c60e34746465b61cda9777de83bcf))
+- upgrade strapi & content type & more ([0588199](https://github.com/Cook-Up/cookup-api/commit/0588199a803d8b55647272c45f6e5a07ad005c06))
 
+### Bug Fixes
+
+- **pg:** Hotfix database connexion ([3ece60d](https://github.com/Cook-Up/cookup-api/commit/3ece60dd31bd819a5a33c904a4ee4ee5c25a83c9))
+- **postgresql:** hotfix postgres connection ([af04f54](https://github.com/Cook-Up/cookup-api/commit/af04f54650a44310f8cd3c7ae0ee78d515ab1234))
+- **yarn:** Outdated lockfile ([9ae4de1](https://github.com/Cook-Up/cookup-api/commit/9ae4de142be2f204571270c8f1add240799c5214))
 
 ### Others
 
-* **release:** 0.3.0 ([98654cb](https://github.com/Cook-Up/cookup-api/commit/98654cb47ee08bfed58ea5c31d3e91b82b05a22f))
+- **release:** 0.2.0 ([69d4d9d](https://github.com/Cook-Up/cookup-api/commit/69d4d9db442febbcceac68416462ffcdb138dc42))
 
 ## [0.2.0](https://github.com/Cook-Up/cookup-api/compare/v0.1.1...v0.2.0) (2020-06-03)
 
