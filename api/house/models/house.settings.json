@@ -18,13 +18,9 @@
       "collection": "user",
       "via": "houses"
     },
-    "plannings": {
-      "collection": "planning",
-      "via": "house"
-    },
     "foods": {
-      "collection": "food",
-      "via": "house"
+      "via": "house",
+      "collection": "food"
     },
     "recipes": {
       "collection": "recipe",

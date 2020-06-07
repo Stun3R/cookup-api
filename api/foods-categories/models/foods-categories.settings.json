@@ -16,6 +16,10 @@
     },
     "icon": {
       "type": "string"
+    },
+    "foods": {
+      "via": "food_category",
+      "collection": "food"
     }
   }
 }

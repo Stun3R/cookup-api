@@ -14,11 +14,43 @@
       "required": true
     },
     "house": {
-      "via": "foods",
-      "model": "house"
+      "model": "house",
+      "via": "foods"
     },
-    "measure": {
-      "model": "measure"
+    "food_category": {
+      "model": "foods-categories",
+      "via": "foods"
+    },
+    "place": {
+      "type": "enumeration",
+      "enum": [
+        "fridge",
+        "freezer",
+        "pantry"
+      ],
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "default": "null"
+    },
+    "unit": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "float"
+    },
+    "nutriments": {
+      "type": "json"
+    },
+    "barcode": {
+      "type": "string",
+      "required": true
+    },
+    "expire_at": {
+      "type": "datetime",
+      "required": false
     }
   }
 }
