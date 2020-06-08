@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/Cook-Up/cookup-api/compare/v0.3.1...v0.4.0) (2020-06-08)
+
+
+### Features
+
+* **api:recipes:** create recipes management ([827940e](https://github.com/Cook-Up/cookup-api/commit/827940e247cafeb04940ec17e7e91417da7e0f75))
+
+
+### Bug Fixes
+
+* **changelog:** Missing text in CHANGELOG.md ([a53d8c0](https://github.com/Cook-Up/cookup-api/commit/a53d8c00686a572a0b670c982efb3c3c176fc9fd))
+
 ### [0.3.1](https://github.com/Cook-Up/cookup-api/compare/v0.3.0...v0.3.1) (2020-06-07)
 
 ### Features
