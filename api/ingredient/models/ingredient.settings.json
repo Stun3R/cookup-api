@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ingredients",
+  "info": {
+    "name": "Ingredient"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "quantity": {
+      "type": "float"
+    },
+    "food": {
+      "model": "food"
+    },
+    "recipe": {
+      "via": "ingredients",
+      "model": "recipe"
+    }
+  }
+}

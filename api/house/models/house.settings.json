@@ -23,8 +23,8 @@
       "collection": "food"
     },
     "recipes": {
-      "collection": "recipe",
-      "via": "house"
+      "via": "house",
+      "collection": "recipe"
     },
     "list_at": {
       "type": "integer",

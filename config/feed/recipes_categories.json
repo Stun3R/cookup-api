@@ -1,1 +1,22 @@
-{}
+[
+  {
+    "name": "Apéritifs",
+    "icon": "snack.svg"
+  },
+  {
+    "name": "Entrées",
+    "icon": "salad.svg"
+  },
+  {
+    "name": "Plats",
+    "icon": "dish.svg"
+  },
+  {
+    "name": "Desserts",
+    "icon": "dessert.svg"
+  },
+  {
+    "name": "Boissons",
+    "icon": "drink.svg"
+  }
+]
