@@ -58,8 +58,8 @@
       "dominant": true
     },
     "recipes": {
-      "collection": "recipe",
-      "via": "user"
+      "via": "user",
+      "collection": "recipe"
     },
     "current_house": {
       "model": "house"

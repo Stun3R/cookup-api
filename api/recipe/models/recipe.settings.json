@@ -25,19 +25,28 @@
       "required": true
     },
     "user": {
-      "via": "recipes",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "recipes"
     },
     "house": {
-      "via": "recipes",
-      "model": "house"
+      "model": "house",
+      "via": "recipes"
     },
-    "foods": {
-      "collection": "food"
+    "ingredients": {
+      "collection": "ingredient",
+      "via": "recipe"
     },
-    "recipe_category": {
-      "model": "recipe-category"
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "snack",
+        "appetizers",
+        "dish",
+        "dessert",
+        "drink"
+      ],
+      "required": true
     }
   }
 }
