@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/Cook-Up/cookup-api/compare/v0.4.0...v0.4.1) (2020-06-09)
+
+
+### Bug Fixes
+
+* **providers:email:** remove nodemailer because outdated and add custom providers to replace him ([134958c](https://github.com/Cook-Up/cookup-api/commit/134958c113861a99a3ad6fb4d26d504295884dbe))
+
 ## [0.4.0](https://github.com/Cook-Up/cookup-api/compare/v0.3.1...v0.4.0) (2020-06-08)
 
 
