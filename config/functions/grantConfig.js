@@ -25,5 +25,6 @@ module.exports = async () => {
       }
     }
   });
+  console.log(grantConfig);
   await pluginStore.set({ key: 'grant', value: grantConfig });
 };
