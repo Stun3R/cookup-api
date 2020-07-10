@@ -47,6 +47,11 @@
         "drink"
       ],
       "required": true
+    },
+    "meals": {
+      "collection": "meal",
+      "via": "recipes",
+      "dominant": true
     }
   }
 }

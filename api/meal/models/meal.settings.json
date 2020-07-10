@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meals",
+  "info": {
+    "name": "Meal"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "daily_menu": {
+      "via": "dinner",
+      "model": "daily-menu"
+    },
+    "recipes": {
+      "via": "meals",
+      "collection": "recipe"
+    }
+  }
+}

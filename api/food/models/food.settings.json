@@ -14,8 +14,8 @@
       "required": true
     },
     "house": {
-      "model": "house",
-      "via": "foods"
+      "via": "foods",
+      "model": "house"
     },
     "food_category": {
       "model": "foods-categories",

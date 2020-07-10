@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/foods/expire",
+      "handler": "food.expire",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/foods/:id",
       "handler": "food.findOne",
       "config": {

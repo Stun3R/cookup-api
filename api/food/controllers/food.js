@@ -8,6 +8,9 @@
 const _ = require('lodash');
 const axios = require('axios');
 const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
+const dayjs = require('dayjs');
+const isBetween = require('dayjs/plugin/isBetween');
+dayjs.extend(isBetween);
 
 const formatError = error => [
   { messages: [{ id: error.id, message: error.message, field: error.field }] },
@@ -184,4 +187,47 @@ module.exports = {
       return ctx.internalServerError();
     }
   },
+
+  async count(ctx) {
+    try {
+      const places = {
+        all: 0,
+        fridge: 0,
+        freezer: 0,
+        pantry: 0
+      };
+
+
+      let entities = await strapi.services.food.find({ 'house.id': ctx.state.user.current_house });
+
+      places.all = entities.length;
+
+      entities = _.groupBy(entities, (item) => {
+        return item.place;
+      });
+
+      _.forEach(entities, function(value, key) {
+        places[key] = value.length;
+      });
+
+      return places;
+    } catch (error) {
+      return ctx.badRequest();
+    }
+  },
+
+  async expire(ctx) {
+    const now = dayjs();
+    const nextWeek = now.add(7, 'day');
+
+    const foods = await strapi.services.food.find({ 'house.id': ctx.state.user.current_house });
+  
+    const entities = _.filter(foods, function(item) {
+      const expire_at = dayjs(item.expire_at);
+      return expire_at.isBetween(now, nextWeek) || expire_at.isBefore(now);
+    });
+
+    return entities.map(entity => sanitizeEntity(entity, { model: strapi.models.food }));
+  }
+
 };

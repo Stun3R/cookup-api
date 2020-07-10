@@ -19,8 +19,8 @@
       "via": "houses"
     },
     "foods": {
-      "via": "house",
-      "collection": "food"
+      "collection": "food",
+      "via": "house"
     },
     "recipes": {
       "via": "house",
@@ -36,6 +36,10 @@
     "uuid": {
       "type": "string",
       "unique": true
+    },
+    "daily_menus": {
+      "collection": "daily-menu",
+      "via": "house"
     }
   }
 }
