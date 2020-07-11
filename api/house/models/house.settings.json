@@ -23,8 +23,8 @@
       "via": "house"
     },
     "recipes": {
-      "via": "house",
-      "collection": "recipe"
+      "collection": "recipe",
+      "via": "house"
     },
     "list_at": {
       "type": "integer",
@@ -37,9 +37,9 @@
       "type": "string",
       "unique": true
     },
-    "daily_menus": {
-      "collection": "daily-menu",
-      "via": "house"
+    "meals": {
+      "via": "house",
+      "collection": "meal"
     }
   }
 }

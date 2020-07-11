@@ -30,8 +30,8 @@
       "via": "recipes"
     },
     "house": {
-      "model": "house",
-      "via": "recipes"
+      "via": "recipes",
+      "model": "house"
     },
     "ingredients": {
       "collection": "ingredient",
@@ -47,11 +47,6 @@
         "drink"
       ],
       "required": true
-    },
-    "meals": {
-      "collection": "meal",
-      "via": "recipes",
-      "dominant": true
     }
   }
 }

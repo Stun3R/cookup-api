@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/daily-menus",
-      "handler": "daily-menu.find",
+      "path": "/aliments",
+      "handler": "aliment.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/daily-menus/count",
-      "handler": "daily-menu.count",
+      "path": "/aliments/count",
+      "handler": "aliment.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/daily-menus/:id",
-      "handler": "daily-menu.findOne",
+      "path": "/aliments/:id",
+      "handler": "aliment.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/daily-menus",
-      "handler": "daily-menu.create",
+      "path": "/aliments",
+      "handler": "aliment.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/daily-menus/:id",
-      "handler": "daily-menu.update",
+      "path": "/aliments/:id",
+      "handler": "aliment.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/daily-menus/:id",
-      "handler": "daily-menu.delete",
+      "path": "/aliments/:id",
+      "handler": "aliment.delete",
       "config": {
         "policies": []
       }

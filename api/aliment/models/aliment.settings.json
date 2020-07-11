@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aliments",
+  "info": {
+    "name": "Aliment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "quantity": {
+      "type": "float"
+    },
+    "meal": {
+      "via": "aliments",
+      "model": "meal"
+    },
+    "food": {
+      "model": "food"
+    }
+  }
+}
