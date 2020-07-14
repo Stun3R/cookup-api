@@ -34,8 +34,8 @@
       "model": "house"
     },
     "ingredients": {
-      "collection": "ingredient",
-      "via": "recipe"
+      "via": "recipe",
+      "collection": "ingredient"
     },
     "category": {
       "type": "enumeration",
@@ -47,6 +47,10 @@
         "drink"
       ],
       "required": true
+    },
+    "meal": {
+      "via": "recipes",
+      "model": "meal"
     }
   }
 }

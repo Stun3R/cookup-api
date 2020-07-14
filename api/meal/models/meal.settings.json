@@ -14,7 +14,8 @@
       "required": true
     },
     "recipes": {
-      "collection": "recipe"
+      "collection": "recipe",
+      "via": "meal"
     },
     "aliments": {
       "collection": "aliment",

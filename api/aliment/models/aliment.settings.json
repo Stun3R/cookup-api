@@ -17,7 +17,8 @@
       "model": "meal"
     },
     "food": {
-      "model": "food"
+      "model": "food",
+      "via": "aliments"
     }
   }
 }

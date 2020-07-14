@@ -13,11 +13,12 @@
       "type": "float"
     },
     "food": {
-      "model": "food"
+      "model": "food",
+      "via": "ingredients"
     },
     "recipe": {
-      "via": "ingredients",
-      "model": "recipe"
+      "model": "recipe",
+      "via": "ingredients"
     }
   }
 }

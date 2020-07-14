@@ -51,6 +51,14 @@
     "expire_at": {
       "type": "datetime",
       "required": false
+    },
+    "ingredients": {
+      "via": "food",
+      "collection": "ingredient"
+    },
+    "aliments": {
+      "via": "food",
+      "collection": "aliment"
     }
   }
 }

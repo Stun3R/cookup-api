@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shoppingItem",
+  "info": {
+    "name": "Shopping Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "bought": {
+      "type": "boolean",
+      "default": false
+    },
+    "food": {
+      "model": "food"
+    },
+    "shopping_list": {
+      "model": "shopping-list",
+      "via": "shopping_items"
+    }
+  }
+}

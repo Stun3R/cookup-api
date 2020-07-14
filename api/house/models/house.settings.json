@@ -30,8 +30,8 @@
       "type": "integer",
       "default": 1,
       "required": true,
-      "max": 7,
-      "min": 1
+      "max": 6,
+      "min": 0
     },
     "uuid": {
       "type": "string",
@@ -40,6 +40,10 @@
     "meals": {
       "via": "house",
       "collection": "meal"
+    },
+    "shopping_lists": {
+      "via": "house",
+      "collection": "shopping-list"
     }
   }
 }

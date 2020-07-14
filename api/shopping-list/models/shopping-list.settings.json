@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shoppingList",
+  "info": {
+    "name": "ShoppingList"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "when": {
+      "type": "date"
+    },
+    "house": {
+      "model": "house",
+      "via": "shopping_lists"
+    },
+    "shopping_items": {
+      "via": "shopping_list",
+      "collection": "shopping-item"
+    }
+  }
+}
