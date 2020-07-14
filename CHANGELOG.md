@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/Cook-Up/cookup-api/compare/v0.4.1...v1.0.0) (2020-07-14)
+
+
+### Features
+
+* **api:daily-menu:** start dev of data model ([978d62d](https://github.com/Cook-Up/cookup-api/commit/978d62d78123fadce4b343957b6d2403c706631a))
+* **api:shopping-list:** add shopping list algo ([74a5033](https://github.com/Cook-Up/cookup-api/commit/74a5033a7dc8efae28b08232c020f2e753d8b95f))
+* **planning:** add planning data model (aliments, meal) ([e86c9ca](https://github.com/Cook-Up/cookup-api/commit/e86c9ca1e330282560e53832a69a7f1deb0bcfac))
+
 ### [0.4.1](https://github.com/Cook-Up/cookup-api/compare/v0.4.0...v0.4.1) (2020-06-09)
 
 
