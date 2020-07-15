@@ -15,7 +15,8 @@ module.exports = {
     const entity = await strapi.services['shopping-item'].update({ id }, { bought: true });
 
     if (entity && quantity && quantity >= entity.food.quantity) {
-      const food = await strapi.services.food.update({ id: entity.food.id }, { quantity: parseFloat(quantity) });
+      const newQuantity = entity.food.quantity + parseFloat(quantity);
+      const food = await strapi.services.food.update({ id: entity.food.id }, { quantity: newQuantity });
       if (food) {
         entity.food = food;
       }
