@@ -25,7 +25,7 @@
     "standard-version": "^8.0.0"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dayjs": "^1.8.29",
     "knex": "^0.21.1",
     "nodemailer": "^6.4.8",
