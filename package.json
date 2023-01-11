@@ -27,7 +27,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "dayjs": "^1.8.29",
-    "knex": "^0.21.1",
+    "knex": "^2.4.0",
     "nodemailer": "^6.4.8",
     "nodemailer-ntlm-auth": "^1.0.1",
     "pg": "^8.0.3",
